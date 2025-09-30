@@ -9,14 +9,20 @@ import { Gallery } from "./components/Gallery";
 const KAKAO_MAP_URL = "https://place.map.kakao.com/1467306095";
 
 export const metadata = {
-  title: "슬기 아빠의 사이커피 초대장",
-  description: "슬기 아빠의 사이커피 방문 초대",
+  title: "슬기 아빠의 사이커피 초대장 ☕️",
+  description:
+    "따뜻한 향 가득한 작은 로스터리, 슬기 아빠의 사이커피에 놀러오세요~ ☕️🐾",
   openGraph: {
-    title: "슬기 아빠의 사이커피 초대장",
-    description: "슬기 아빠의 사이커피 방문 초대",
-    images: {
-      url: "/슬기.jpeg",
-    },
+    title: "슬기 아빠의 사이커피 초대장 ☕️",
+    description: "편하게 들러 한 잔 하고 가세요! 많이 놀러오세요~ 🐶",
+    images: [
+      {
+        url: "/슬기.jpeg", // 새로 준비한 1200x630 파일 권장
+        width: 1200,
+        height: 600,
+        alt: "슬기와 sai coffee",
+      },
+    ],
   },
 };
 
@@ -69,7 +75,7 @@ export default function InvitePage() {
             <div className='flex items-center gap-2 mb-3'>
               <span className='h-2 w-2 rounded-full bg-[#0d2d55]/70 animate-pulse' />
               <h2 className='text-xs font-semibold tracking-[0.25em] text-[#0d2d55]/70 uppercase'>
-                About
+                About 🐾
               </h2>
             </div>
             <div className='flex gap-4'>
@@ -101,13 +107,13 @@ export default function InvitePage() {
         </section>
         <section className='mb-8'>
           <h2 className='text-xs font-semibold tracking-[0.2em] text-[#0d2d55]/70 mb-3 uppercase'>
-            Signature
+            Signature ✨
           </h2>
           <div className='grid grid-cols-3 gap-3 text-center text-[11px]'>
             {[
-              { name: "솔티\n크림 라떼", color: "bg-emerald-50" },
-              { name: "아몬드\n크림 라떼", color: "bg-amber-50" },
-              { name: "아몬드\n크림 모카", color: "bg-rose-50" },
+              { name: "솔티\n크림 라떼 🧂", color: "bg-emerald-50" },
+              { name: "아몬드\n크림 라떼 🌰", color: "bg-amber-50" },
+              { name: "아몬드\n크림 모카 🍫", color: "bg-rose-50" },
             ].map((m) => (
               <div
                 key={m.name}
