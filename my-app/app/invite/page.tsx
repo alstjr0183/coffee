@@ -17,7 +17,6 @@ export const metadata = {
     description: "편하게 들러 한 잔 하고 가세요~🐶",
     images: [
       {
-        url: "/슬기og.jpeg", // 새로 준비한 1200x630 파일 권장
         alt: "슬기와 sai coffee",
       },
     ],
