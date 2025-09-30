@@ -61,7 +61,7 @@ export default function InvitePage() {
       </div>
 
       {/* 본문 */}
-      <div className='flex-1 px-6 py-8'>
+      <div className='flex-1 px-6 pt-8'>
         <section className='mb-10'>
           <div className='relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#f5f9ff] via-white to-[#eef2f8] border border-[#0d2d55]/10 shadow-sm p-5'>
             <div className='flex items-center gap-2 mb-3'>
