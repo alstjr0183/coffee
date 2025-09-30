@@ -36,7 +36,7 @@ export default function InvitePage() {
   return (
     <div className='min-h-screen w-full bg-white text-[#0d2d55] font-sans flex flex-col'>
       {/* Hero 슬라이더 (페이드) */}
-      <div className='relative w-full aspect-[9/16] overflow-hidden'>
+      <div className='relative w-full aspect-[4/5] overflow-hidden'>
         {/* 이미지 레이어 */}
         {/* 슬라이드 속도 변경: 총 9초 (이미지 5장 * 1.8초 간격 권장). */}
         <div className='absolute inset-0 animate-[fadeCycle_9s_linear_infinite]'>
@@ -128,7 +128,7 @@ export default function InvitePage() {
           </h2>
           <Gallery />
         </section>
-        <section className='mb-12'>
+        <section className='mb-8'>
           <h2 className='text-xs font-semibold tracking-[0.2em] text-[#0d2d55]/70 mb-2 uppercase'>
             Visit
           </h2>
