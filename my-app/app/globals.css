@@ -64,3 +64,57 @@ body {
 }
 
 /* 기존 18s 사이클 커스텀용: fadeCycle_* 는 wrapper div 에만 의미 (placeholder) */
+
+/* Hero zoom (살짝 선명/샤한 느낌) */
+@keyframes heroZoom {
+  0% {
+    transform: scale(1.05);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* 반짝 텍스트 그라데이션 이동 */
+@keyframes shineText {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* 블롭 숨쉬기 */
+@keyframes pulseBlob {
+  0%,
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 0.55;
+  }
+  50% {
+    transform: scale(1.15) translateY(10px);
+    opacity: 0.8;
+  }
+}
+
+/* 섹션 위로 부드럽게 등장 */
+@keyframes sectionRise {
+  0% {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
