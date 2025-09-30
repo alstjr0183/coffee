@@ -19,7 +19,7 @@ export const metadata = {
       {
         url: "/슬기.jpeg", // 새로 준비한 1200x630 파일 권장
         width: 1200,
-        height: 600,
+        height: 550,
         alt: "슬기와 sai coffee",
       },
     ],
