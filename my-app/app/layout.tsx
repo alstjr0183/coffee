@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   description: "슬기 아빠의 작은 로스터리 sai coffee",
   icons: {
-    icon: "/슬기og.jpeg",
-    shortcut: "/슬기og.jpeg",
-    apple: "/슬기og.jpeg",
+    icon: "/강아지.jpeg",
+    shortcut: "/강아지.jpeg",
+    apple: "/강아지.jpeg",
   },
 };
 

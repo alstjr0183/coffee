@@ -17,7 +17,7 @@ export const metadata = {
     description: "편하게 들러 한 잔 하고 가세요~🐶",
     images: [
       {
-        url: "/슬기og.jpeg",
+        url: "/강아지.jpeg",
         alt: "슬기와 sai coffee",
       },
     ],
