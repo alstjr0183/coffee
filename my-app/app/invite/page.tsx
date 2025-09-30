@@ -94,10 +94,11 @@ export default function InvitePage() {
                 <p className='font-medium text-[#0d2d55] mb-1'>
                   슬기 아빠의 작은 로스터리
                 </p>
-                <p>
-                  슬기아빠가 정성 들여 준비한{" "}
-                  <span className='font-semibold'>sai coffee</span> 오픈! 편하게
-                  놀러오세요 ☕️
+                <p className='whitespace-nowrap'>
+                  정성 들여 준비한
+                  <br />
+                  <span className='font-semibold'>sai coffee</span> 오픈! <br />{" "}
+                  편하게 놀러오세요 ☕️
                 </p>
               </div>
             </div>
