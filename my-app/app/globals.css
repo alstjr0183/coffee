@@ -43,3 +43,24 @@ body {
     opacity: 0;
   }
 }
+
+/* 빠른(9초) 슬라이더용 */
+@keyframes fadeImage_9s {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 기존 18s 사이클 커스텀용: fadeCycle_* 는 wrapper div 에만 의미 (placeholder) */

@@ -9,16 +9,17 @@ import { Gallery } from "./components/Gallery";
 const KAKAO_MAP_URL = "https://place.map.kakao.com/1467306095";
 
 export const metadata = {
-  title: "sai coffee 초대장",
-  description: "sai coffee 방문 초대",
+  title: "슬기 아빠의 사이커피 초대장",
+  description: "슬기 아빠의 사이커피 방문 초대",
+  openGraph: {
+    title: "슬기 아빠의 사이커피 초대장",
+    description: "슬기 아빠의 사이커피 방문 초대",
+    images: {
+      url: "/슬기.jpeg",
+    },
+  },
 };
 
-//  { src: "/coffee_1.jpeg", alt: "sai coffee image 1" },
-//   { src: "/coffee_2.png", alt: "sai coffee image 2" },
-//   { src: "/coffee_3.png", alt: "sai coffee image 3" },
-//   { src: "/coffee_4.jpeg", alt: "sai coffee image 4" },
-//   { src: "/coffee_5.jpeg", alt: "sai coffee image 5" },
-//   { src: "/coffee_6.jpeg", alt: "sai coffee image 6" },
 export default function InvitePage() {
   const heroImages = [
     "/coffee_2.jpeg",
@@ -33,12 +34,13 @@ export default function InvitePage() {
       {/* Hero 슬라이더 (페이드) */}
       <div className='relative w-full aspect-[9/16] overflow-hidden'>
         {/* 이미지 레이어 */}
-        <div className='absolute inset-0 animate-[fadeCycle_18s_linear_infinite]'>
+        {/* 슬라이드 속도 변경: 총 9초 (이미지 5장 * 1.8초 간격 권장). */}
+        <div className='absolute inset-0 animate-[fadeCycle_9s_linear_infinite]'>
           {heroImages.map((src, i) => (
             <div
               key={src}
-              className='absolute inset-0 opacity-0 [animation:fadeImage_18s_linear_infinite]'
-              style={{ animationDelay: `${i * 6}s` }}
+              className='absolute inset-0 opacity-0 [animation:fadeImage_9s_linear_infinite]'
+              style={{ animationDelay: `${i * 1.8}s` }}
             >
               <Image
                 src={src}
@@ -103,7 +105,7 @@ export default function InvitePage() {
           </h2>
           <div className='grid grid-cols-3 gap-3 text-center text-[11px]'>
             {[
-              { name: "숲티\n크림 라떼", color: "bg-emerald-50" },
+              { name: "솔티\n크림 라떼", color: "bg-emerald-50" },
               { name: "아몬드\n크림 라떼", color: "bg-amber-50" },
               { name: "아몬드\n크림 모카", color: "bg-rose-50" },
             ].map((m) => (
